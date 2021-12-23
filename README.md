@@ -15,11 +15,12 @@ gdobomajauauja@gmail.com
 
 aconselho vocês usarem o gerador número V3, pois ele é bem SIMPLES de ser utilizado!
 
+pode ser que depois de algumas contas você precise usar uma vpn !
+
 
 
 
 meu discord é: Kagura[studying]#8041
-
 
 
 
