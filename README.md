@@ -19,3 +19,8 @@ aconselho vocês usarem o gerador número V3, pois ele é bem SIMPLES de ser uti
 
 
 meu discord é: Kagura[studying]#8041
+
+
+
+
+credits for: tools, Kira and gabbi
