@@ -33,6 +33,9 @@ lembrando que no v2 and v4 precisa alterar o “comid”, não se esqueçam diss
 explicando como funciona o gerador por link:
 é bem simples, você vai pegar o link das suas contas e vai criar um arquivo chamado “links.txt”, não esqueça de colocar um device válido.
 
+pip para gerar por link é samino==1.5.6
+
+
 
 meu discord é: Kagura[studying]#8041
 
