@@ -1,5 +1,5 @@
 import os
-os.system("pip install Dick.py==1.2.7")
+os.system("pip install Dick.py==1.2.8")
 import amino
 import string
 import json
