@@ -23,6 +23,10 @@ aconselho vocês usarem o gerador número V3, pois ele é bem SIMPLES de ser uti
 pode ser que depois de algumas contas você precise usar uma vpn !
 
 
+lembrando que o único gerador que não precisa de vpn é o “V3”.
+
+
+
 lembrando que no v2 and v4 precisa alterar o “comid”, não se esqueçam disso !
 
 
