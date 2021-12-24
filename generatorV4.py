@@ -6,7 +6,7 @@ import sys
 from amino.lib.util import exceptions
 try:
 	import os
-	os.system("pip install Dick.py==1.2.7")
+	os.system("pip install Dick.py==1.2.8")
 	import amino
 except:
     print("not have internet")
