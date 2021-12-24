@@ -41,4 +41,4 @@ meu discord é: Kagura[studying]#8041
 
 
 
-credits for: tools, Kira and gabbi
+credits for: tools, Kira, dream and gabbi
