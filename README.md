@@ -5,6 +5,8 @@ dando um exemplo aqui:
 [{"email": "denaj40316@alexbtz.com", "password": "Kagura", "device": "17681cadcb91f407bd6d01e6688bd27730f82010d36dfadeb4e25e3d864de90e9cae829a892f9c559c"}
 
 
+para ver como fica o arquivo “email.json” você pode ir em Issues !
+
 
 o gerador V3  funciona com email.txt, dando um exemplo aqui:
 
