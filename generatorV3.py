@@ -1,5 +1,5 @@
 import os
-os.system("pip install Dick.py==1.2.6")
+os.system("pip install Dick.py==1.2.7")
 import amino
 import string
 import json
@@ -86,4 +86,3 @@ for line in email:
 sub.activity_status("on")
 sub.send_active_obj(timers=timer)
 start+=1
-client.logout()
