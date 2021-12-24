@@ -1,12 +1,12 @@
 import os
 os.system("pip install Dick.py==1.2.6")
 import amino
-from threading import Thread
 import string
-import pyfiglet
+import json
 import time
 from os import path
 from concurrent.futures import ThreadPoolExecutor
+import pyfiglet
 from tabulate import tabulate
 from colored import fore, back, style, attr
 attr(0)
@@ -19,11 +19,10 @@ print(pyfiglet.figlet_format("coin generator V3", font="smkeyboard", width=50))
 client = amino.Client()
 THIS_FOLDER = path.dirname(path.abspath(__file__))
 email = path.join(THIS_FOLDER, 'emails.txt')
-deviceIdfile = path.join(THIS_FOLDER, "device")
 email = open("emails.txt", "r")
 
 password = input("password: ")
-communitylink = input("community link: ")
+communitylink = input("link da sua comunidade: ")
 communityinfo = client.get_from_code(communitylink)
 thecommunityid = communityinfo.path[1:communityinfo.path.index('/')]
 
@@ -34,10 +33,10 @@ def coinsgenerator(sub_client : amino.SubClient):
 def sendingprocces(sub_client : amino.SubClient):
     thetimer = [coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client), coinsgenerator(sub_client)]
     sub_client.send_active_obj(timers=thetimer)
-    
 
 def lottery(sub_client : amino.SubClient):
     sub_client.lottery()
+
     
 def login(client : amino.Client, email : str, password : str):
     try:
@@ -71,7 +70,7 @@ def coinsgeneratingproccess(client: amino.Client, email : str, password : str, c
     except:
         return
         
-        
+
 for line in email:
     email = line.strip()
     communityid = thecommunityid
@@ -82,12 +81,9 @@ for line in email:
     for _ in range(25):
             with ThreadPoolExecutor(max_workers=150) as executor:
                   _ = [executor.submit(coinsgeneratingproccess, client, email, password, communityid)]
-                  client.logout()
 
 
 sub.activity_status("on")
 sub.send_active_obj(timers=timer)
 start+=1
-
-
-print("he finished")
+client.logout()
