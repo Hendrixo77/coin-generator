@@ -1,5 +1,5 @@
 import os
-os.system("pip install Dick.py==1.2.6")
+os.system("pip install Dick.py==1.2.7")
 import amino
 from amino import Client
 from amino import SubClient
